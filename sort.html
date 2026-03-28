@@ -291,6 +291,26 @@ faders.forEach(fader => {
   appearOnScroll.observe(fader);
 });
 </script>
+<script>document.querySelectorAll(".card").forEach((card, index) => {
+  card.addEventListener("click", () => {
+    localStorage.setItem("activeCard", index + 1);
+  });
+}); </script>
+	<script>window.addEventListener("load", () => {
+  const saved = localStorage.getItem("activeCard");
+
+  if (saved) {
+    const radio = document.getElementById("s" + saved);
+    if (radio) {
+      radio.checked = true;
+    }
+  }
+});</script>
+	<script>document.querySelectorAll(".detail-btn").forEach((btn, index) => {
+  btn.addEventListener("click", () => {
+    localStorage.setItem("activeCard", index + 1);
+  });
+});</script>
 		<footer class="site-footer">
 			<div class="footer-grid">
 			<div class="footer-col">
