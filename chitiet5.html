@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Rác cồng kềnh</title>
+
+<style>
+
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
+
+body{
+font-family:Arial;
+background:#efe3d6;
+padding:50px;
+color:#333;
+}
+
+/* nút quay lại */
+.back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  background: transparent;
+  color: #3A5A40;
+
+  border: 2px solid #7a8a4f;
+  padding: 10px 18px;
+  border-radius: 30px;
+
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+  background: #7a8a4f;
+  color: white;
+  transform: translateX(-3px);
+}
+
+/* container */
+
+.container{
+max-width:950px;
+margin:auto;
+background:white;
+padding:40px;
+border-radius:25px;
+box-shadow:0 15px 30px rgba(0,0,0,0.15);
+}
+
+/* tiêu đề */
+
+h1{
+color:#8b5a2b;
+margin-bottom:10px;
+}
+
+.intro{
+margin-bottom:30px;
+line-height:1.6;
+}
+
+/* section */
+
+.section{
+margin-bottom:20px;
+}
+
+.section h2{
+color:#9c6b42;
+margin-bottom:10px;
+font-size:22px;
+}
+h2{
+margin-bottom:8px;
+}
+
+/* list */
+
+ul{
+padding-left:20px;
+line-height:1.7;
+}
+.trash-list{
+list-style:none;
+padding-left:0;
+margin-top:5px;
+}
+
+.trash-list li{
+font-size:17px;
+margin-bottom:8px;
+display:flex;
+align-items:center;
+gap:8px;
+}
+.example-layout{
+display:flex;
+align-items:flex-start;
+justify-content:space-between;
+gap:40px;
+margin-top:10px;
+margin-bottom: 10px;
+}
+.example-text{
+    max-width: 400px;
+}
+.img{
+width:340px;
+height:auto;
+border-radius:15px;
+margin-top: -10px;
+}
+
+.image-box{
+text-align:center;
+margin-top:5px;
+}
+
+/* grid cho phần xử lý đặc biệt */
+
+.grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:20px;
+margin-top:10px;
+}
+
+.card{
+background:#f6ede6;
+padding:20px;
+border-radius:15px;
+transition:0.25s;
+}
+
+.card:hover{
+transform:translateY(-4px);
+}
+
+.card h3{
+margin-bottom:10px;
+color:#5a3a21;
+}
+
+</style>
+</head>
+
+<body>
+
+<button onclick="history.back()"class="back-btn">← Quay lại</button>
+
+<div class="container">
+
+<h1>Rác cồng kềnh (粗大ゴミ)</h1>
+
+<p class="intro">
+Đây là các loại rác có kích thước lớn, không thể bỏ vào túi rác thông thường.
+Rác cồng kềnh cần được đăng ký thu gom trước hoặc mang đến các điểm xử lý do địa phương quy định.</p>
+<div class="section">
+<div class="example-layout">
+
+<div class="example-text">
+
+<h2>Ví dụ các loại rác</h2>
+
+<ul class="trash-list">
+<li>🪑 Nội thất: bàn, ghế, tủ, kệ sách</li>
+<li>🛏 Đồ gia dụng lớn: nệm, futon, sofa, thảm lớn</li>
+<li>🚲 Đồ dùng lớn: xe đạp, vali lớn, quạt máy lớn</li>
+<li>🚪 Vật dụng khác: cửa gỗ, ván gỗ, vật dài hoặc cồng kềnh</li>
+</ul>
+
+</div>
+
+<div class="image-box">
+<img src="image/anhchitiet5.png" alt="Rác cồng kềnh" class="img">
+<p class="source">
+Nguồn: <a href="https://iconscout.com/illustrations/hazardous-waste" target="_blank">IconScout</a>
+</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<h2>Cách xử lý trước khi bỏ rác</h2>
+
+<ul>
+<li>Đăng ký thu gom rác cồng kềnh với chính quyền địa phương.</li>
+<li>Mua tem xử lý rác (粗大ゴミ処理券) tại cửa hàng tiện lợi hoặc siêu thị.</li>
+<li>Dán tem lên vật dụng cần bỏ.</li>
+<li>Đặt rác tại địa điểm quy định vào ngày thu gom.</li>
+</ul>
+
+</div>
+
+
+<div class="section">
+
+<h2>Hướng xử lý một số loại rác đặc biệt</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>Nội thất còn sử dụng được</h3>
+
+<ul>
+<li>Có thể bán lại trên các ứng dụng đồ cũ</li>
+<li>Tặng cho bạn bè hoặc cộng đồng địa phương</li>
+<li>Mang đến các cửa hàng tái chế.</li>
+</ul>
+
+</div>
+
+
+<div class="card">
+
+<h3>Xe đạp</h3>
+
+<ul>
+<li>Nếu bỏ xe đạp, cần tháo hoặc hủy đăng ký chống trộm trước.</li>
+<li>Có thể bán hoặc mang đến cửa hàng tái chế.</li>
+</ul>
+
+</div>
+
+
+<div class="card">
+
+<h3>Nệm, futon</h3>
+
+<ul>
+<li>Có thể cuộn hoặc buộc gọn trước khi bỏ.</li>
+<li>Một số địa phương yêu cầu bỏ riêng hoặc đăng ký thu gom riêng.</li>
+</ul>
+
+</div>
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
